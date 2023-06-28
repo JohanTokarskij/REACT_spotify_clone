@@ -1,7 +1,71 @@
 .body {
-    flex: 0.8; 
+    flex: 0.8;
     background: linear-gradient(#5b5773, #282828);
-    height: 100vh;
+    height: 88vh;
     color: white;
+    overflow-y: overlay;
     padding: 25px;
+
+}
+
+.body::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+}
+
+.body__info {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+
+}
+
+.body__info>img {
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__infotext {
+    flex: 1;
+
+}
+
+.body__infotext>h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.body__infotext>p {
+    font-size: 14px;
+
+}
+
+.body__icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.body__shuffle {
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.body__shuffle:hover {
+    transition: 0.1s transform ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.body__songs {
+    margin: 20px -30px;
 }
